@@ -1,0 +1,91 @@
+@import "./variables.scss";
+
+// $purple: rgb(183, 52, 165);
+// $link: #69c3ff;
+// $link-hover: rgb(255, 159, 242);
+// $nav-bg: rgb(71, 0, 60);
+// $dark: #232323;
+// $clear: #fefefe;
+// $bg-color: #111827;
+
+// $btn-bg: rgb(255, 130, 255);
+// $btn-border: rgb(133, 45, 119);
+
+.hero {
+  margin: 3rem;
+  min-height: 2rem;
+  text-align: center;
+
+  .intro {
+    letter-spacing: 2px;
+    font-weight: 700;
+
+    padding: 1rem;
+    font-size: 1.2rem;
+    background: -webkit-linear-gradient(
+      rgb(114, 171, 236) 0%,
+      rgb(69, 233, 255) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+
+  .name,
+  .charge {
+    font-weight: 700;
+    padding: 1rem;
+
+    font-size: 4rem;
+    background: -webkit-linear-gradient(
+      rgba(236, 114, 167, 1) 0%,
+      rgba(69, 154, 255, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+
+  .wrap-gradient {
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 650px) {
+    .wrap-gradient {
+      display: flex;
+    }
+  }
+
+  .likes {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1.8rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    a {
+      transition: all 0.2s ease-in-out;
+      font-weight: 700;
+      font-size: 1.2;
+      width: 40%;
+      border: 3px solid $btn-border;
+      border-radius: 2rem;
+      display: inline-block;
+      padding: 0.4rem 0.7rem;
+      background-color: $btn-bg;
+      color: $clear;
+
+      &:hover,
+      &:active {
+        background-color: $btn-border;
+        color: $link;
+        border-color: $btn-bg;
+      }
+    }
+  }
+}
