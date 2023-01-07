@@ -19,12 +19,12 @@
   .intro {
     letter-spacing: 2px;
     font-weight: 700;
-
     padding: 1rem;
+
     font-size: 1.2rem;
     background: -webkit-linear-gradient(
-      rgb(114, 171, 236) 0%,
-      rgb(69, 233, 255) 100%
+      rgb(22, 127, 255) 0%,
+      rgb(146, 212, 255) 90%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -46,13 +46,43 @@
     text-fill-color: transparent;
   }
 
-  .wrap-gradient {
-    margin-top: 1.5rem;
+  .wrap-container {
+    display: flex;
+    justify-content: center;
   }
 
-  @media (min-width: 650px) {
+  .wrap-gradient {
+    // margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+  }
+
+  // > 700px
+  @media (min-width: 760px) {
+    .name {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // < 700px
+  @media (max-width: 760px) {
     .wrap-gradient {
-      display: flex;
+      flex-direction: column;
+
+      .charge {
+        line-height: 3.5rem;
+      }
+    }
+  }
+
+  // < 550px
+  @media (max-width: 550px) {
+    .name {
+      line-height: 3.5rem;
+    }
+
+    .name {
+      margin-bottom: 0;
     }
   }
 

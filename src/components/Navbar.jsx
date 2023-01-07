@@ -10,13 +10,13 @@ export default function Navbar() {
             <img src={myLogo} alt="go to home page" />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a className="hover-ani" href="#">
             About Me
           </a>
-        </li>
+        </li> */}
         <li>
-          <a className="hover-ani" href="#">
+          <a className="hover-ani" href="#projects">
             Projects
           </a>
         </li>
