@@ -1,5 +1,6 @@
-import { useState } from "react";
 import "../styles/project.scss";
+import { useState } from "react";
+import { motion } from "framer-motion";
 import codeSvg from "/code.svg";
 import linkSvg from "/link.svg";
 
@@ -11,12 +12,10 @@ export default function Project(props) {
   const [codeLinkHover, setCodeLinkHover] = useState(false);
 
   const handleLiveHover = () => {
-    // console.log("LIVE HO");
     setLiveLinkHover((prev) => !prev);
   };
 
   const handleCodeHover = () => {
-    // console.log("CODE HOE");
     setCodeLinkHover((prev) => !prev);
   };
 
@@ -24,7 +23,11 @@ export default function Project(props) {
     <div
       className={`project-wrapper ${rowReverse ? "row-reverse" : "row-normal"}`}
     >
-      <div className="desc-section">
+      <motion.div
+        className="desc-section"
+        initial={{ x: +200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+      >
         <h3 className="project-title">{title}</h3>
         <p className="desc">{desc}</p>
 
@@ -75,11 +78,16 @@ export default function Project(props) {
             )}
           </a>
         </div>
-      </div>
+      </motion.div>
 
-      <a href={liveLink} className="thumbnail-wrapper">
+      <motion.a
+        href={liveLink}
+        className="thumbnail-wrapper"
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+      >
         <img src={imgUrl} alt={`preview of ${title}`} className="thumbnail" />
-      </a>
+      </motion.a>
     </div>
   );
 }

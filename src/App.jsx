@@ -10,23 +10,11 @@ import Hero from "./components/Hero";
 import ProjectsContainer from "./components/ProjectsContainer";
 
 export default function App() {
-  const { ref, inView } = useInView();
-
   return (
     <>
-      {/* <Navbar /> */}
+      {/* <Navbar {...{parallaxRef}}/> */}
       <Hero />
       <ProjectsContainer />
-
-      <section>
-        <h2 ref={ref} className={""}>
-          Have you scrolled down here yet? 🧐
-        </h2>
-
-        <p>{inView ? "Yes! 🥳" : "No 🙈"}</p>
-      </section>
     </>
   );
 }
-
-//

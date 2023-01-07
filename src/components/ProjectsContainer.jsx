@@ -1,13 +1,18 @@
 import "../styles/projectsContainer.scss";
 import Project from "./Project";
 import projectsData from "../projectsData";
+import { motion } from "framer-motion";
 
 export default function ProjectsContainer() {
   return (
     <div className="main-container" id="projects">
-      <div className="title-wrapper">
+      <motion.div
+        className="title-wrapper"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
         <h2 className="title">Projects</h2>
-      </div>
+      </motion.div>
       <div className="wrapper">
         {projectsData.map((project) => {
           const {
