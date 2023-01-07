@@ -49,7 +49,12 @@ export default function Project(props) {
             {liveLinkHover ? (
               <span>Live Site</span>
             ) : (
-              <img src={linkSvg} alt="goto the project live page" />
+              <img
+                src={linkSvg}
+                alt="goto the project live page"
+                decoding="async"
+                loading="lazy"
+              />
             )}
           </a>
           <a
@@ -61,13 +66,18 @@ export default function Project(props) {
             {codeLinkHover ? (
               <span>Code Source</span>
             ) : (
-              <img src={codeSvg} alt="take a look at the code of the project" />
+              <img
+                src={codeSvg}
+                alt="take a look at the code of the project"
+                decoding="async"
+                loading="lazy"
+              />
             )}
           </a>
         </div>
       </div>
 
-      <a href={liveLink}>
+      <a href={liveLink} className="thumbnail-wrapper">
         <img src={imgUrl} alt={`preview of ${title}`} className="thumbnail" />
       </a>
     </div>

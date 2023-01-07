@@ -4,6 +4,7 @@
 - [Japan lamps](https://www.pexels.com/photo/turned-on-paper-lamps-inside-biuilding-581308/)
 
 # TODO:
+- Change query in `project.scss` to 900px
 - Better nav
   - on big screen have a little think sticked to top right, on mobile bottom right, certical whit mialto:link go top/bottom & projects, icon on top ofc
 - Test different colors for the buttons and just change them in variables.scss
