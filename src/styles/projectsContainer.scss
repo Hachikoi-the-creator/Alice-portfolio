@@ -1,14 +1,4 @@
 @import "./variables.scss";
-$purple: rgb(183, 52, 165);
-$link: #69c3ff;
-$link-hover: rgb(255, 159, 242);
-$nav-bg: rgb(71, 0, 60);
-$dark: #232323;
-$clear: #fefefe;
-$bg-color: #111827;
-
-$btn-bg: rgb(255, 130, 255);
-$btn-border: rgb(133, 45, 119);
 
 .main-container {
   .title-wrapper {
@@ -19,16 +9,17 @@ $btn-border: rgb(133, 45, 119);
     text-align: center;
     font-weight: 700;
     padding: 2rem;
-
     font-size: 4rem;
-    background: -webkit-linear-gradient(
-      rgb(22, 127, 255) 0%,
-      rgb(146, 212, 255) 90%
+    margin-bottom: 0.5rem;
+
+    background-image: linear-gradient(
+      90deg,
+      $gradient-intro1,
+      $gradient-intro2
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    margin-bottom: 0.5rem;
 
     &::after {
       content: "";

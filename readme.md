@@ -7,4 +7,5 @@
 - Better nav
   - on big screen have a little think sticked to top right, on mobile bottom right, certical whit mialto:link go top/bottom & projects, icon on top ofc
 - Test different colors for the buttons and just change them in variables.scss
+- fix the hero btns with framer-motion
 - research some ideas for the about me section

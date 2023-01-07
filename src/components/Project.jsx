@@ -44,7 +44,7 @@ export default function Project(props) {
             href={liveLink}
             onMouseLeave={handleLiveHover}
             onMouseEnter={handleLiveHover}
-            className="link"
+            className="link gradient-btn"
           >
             {liveLinkHover ? (
               <span>Live Site</span>
@@ -56,7 +56,7 @@ export default function Project(props) {
             href={codeLink}
             onMouseLeave={handleCodeHover}
             onMouseEnter={handleCodeHover}
-            className="link"
+            className="link gradient-btn"
           >
             {codeLinkHover ? (
               <span>Code Source</span>

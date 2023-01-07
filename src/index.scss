@@ -32,3 +32,30 @@
 a {
   text-decoration: none;
 }
+
+.gradient-btn {
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  font-size: 1.2;
+  width: 40%;
+  border: 3px solid $btn-border;
+  border-radius: 2rem;
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  color: $bg-color;
+  background-image: radial-gradient(
+    circle,
+    rgba(236, 114, 167, 1) 0%,
+    rgba(251, 159, 255, 1) 100%
+  );
+
+  &:hover,
+  &:active {
+    color: $clear;
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 57, 143, 1) 0%,
+      rgba(176, 116, 178, 1) 100%
+    );
+  }
+}

@@ -15,8 +15,12 @@ export default function Hero() {
       <p className="likes">I like to build cool apps that have a purpose</p>
 
       <div className="buttons">
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
+        <a className="gradient-btn" href="#">
+          LinkedIn
+        </a>
+        <a className="gradient-btn" href="#">
+          Twitter
+        </a>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 export default [
   {
     imgUrl: "/img/working-on.jpg",
-    title: "Working on it",
-    desc: "I took a lot of time and tools to make this possible",
-    liveLink: "https://cunt.es",
-    codeLink: "https://theHub.cunt",
-    techStack: ["react", "redux", "yo mama"],
+    title: "Pastry Shop - ES",
+    desc: "I was asked to make a simple site to showcase a couple of cakes",
+    liveLink: "https://pro-por.netlify.app",
+    codeLink: "https://github.com/Hachikoi-the-creator/new-client",
+    techStack: ["JQuery", "SASS", "HTML", "JS"],
     rowReverse: true
   },
   {
