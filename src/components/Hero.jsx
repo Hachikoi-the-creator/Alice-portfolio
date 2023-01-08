@@ -15,8 +15,8 @@ export default function Hero() {
 
       <motion.div
         className="wrap-container"
-        initial={{ x: -400, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
       >
         <div className="wrap-gradient">
           <p className="charge">Full Stack</p>
@@ -34,8 +34,8 @@ export default function Hero() {
 
       <motion.div
         className="buttons"
-        initial={{ x: +400, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
       >
         <a className="gradient-btn" href="#">
           LinkedIn

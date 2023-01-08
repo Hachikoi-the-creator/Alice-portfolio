@@ -1,8 +1,7 @@
 @import "./variables.scss";
 
 .main-container {
-  // width: 80%;
-  // margin: 0 5%;
+  margin-top: 13rem;
 
   .title-wrapper {
     position: relative;
@@ -37,7 +36,6 @@
 }
 
 .wrapper {
-  // border: 1px solid snow;
   width: 80%;
   margin: 2rem 10%;
   display: flex;

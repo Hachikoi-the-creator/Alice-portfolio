@@ -12,7 +12,7 @@ import ProjectsContainer from "./components/ProjectsContainer";
 export default function App() {
   return (
     <>
-      {/* <Navbar {...{parallaxRef}}/> */}
+      <Navbar />
       <Hero />
       <ProjectsContainer />
     </>
