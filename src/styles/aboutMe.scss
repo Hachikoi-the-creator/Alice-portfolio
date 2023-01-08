@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.about-me {
+  width: 60%;
+  margin: 3rem 20%;
+
+  .gradient-subtitle {
+    margin-bottom: 2rem;
+
+    &::after {
+      top: 8.5rem;
+    }
+  }
+
+  .content {
+    p {
+      margin-bottom: 1.3rem;
+      border-left: 3px solid $link;
+      border-radius: 2px;
+      padding-left: 0.2rem;
+    }
+  }
+}

@@ -17,8 +17,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  // color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgb(255, 255, 255);
   background-color: $bg-color;
 
   font-synthesis: none;
@@ -64,5 +63,40 @@ a {
       rgba(255, 57, 143, 1) 0%,
       rgba(176, 116, 178, 1) 100%
     );
+  }
+}
+
+.gradient-subtitle {
+  text-align: center;
+  font-weight: 700;
+  padding: 2rem;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+
+  background-image: linear-gradient(90deg, $gradient-intro1, $gradient-intro2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    // bottom: -7px;// this one only works for projects'
+    left: 10%;
+    width: 80%;
+    border-bottom: 7px solid $link;
+    border-radius: 7px;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 50%;
+
+  background-color: palevioletred;
+  a {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }

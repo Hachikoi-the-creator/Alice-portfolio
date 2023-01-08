@@ -1,35 +1,21 @@
 import { useState } from "react";
 
-export default function HoverIconLi({ link, baseImg, hoverImg, name }) {
-  const [imgSrc, setImgSrc] = useState(baseImg);
-
-  const handleMouseEnter = () => {
-    setImgSrc(hoverImg);
-  };
-
-  const handleMouseLeave = () => {
-    setImgSrc(baseImg);
-  };
-
-  if (!hoverImg) {
-    return (
-      <li className="icon">
-        <a href={link} className="icon-link">
-          <img src={imgSrc} alt={name} className="icon-img" />
-        </a>
-      </li>
-    );
-  }
-
+export default function HoverIconLi({ link, baseImg, name, goto }) {
   return (
-    <li
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className="icon"
-    >
-      <a href={link} className="icon-link">
-        <img src={imgSrc} alt={name} className="icon-img" />
-      </a>
-    </li>
+    <>
+      {goto ? (
+        <li className="icon" onClick={goto}>
+          <span className="icon-link">
+            <img src={baseImg} alt={name} className="icon-img" />
+          </span>
+        </li>
+      ) : (
+        <li className="icon">
+          <a href={link} className="icon-link">
+            <img src={baseImg} alt={name} className="icon-img" />
+          </a>
+        </li>
+      )}
+    </>
   );
 }

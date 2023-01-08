@@ -11,7 +11,7 @@ export default function ProjectsContainer() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
-        <h2 className="title">Projects</h2>
+        <h2 className="gradient-subtitle">Projects</h2>
       </motion.div>
       <div className="wrapper">
         {projectsData.map((project) => {

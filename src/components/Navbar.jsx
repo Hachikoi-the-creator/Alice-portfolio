@@ -4,12 +4,13 @@ import laptopCode from "/laptop-code.svg";
 import emailSvg from "/email.svg";
 import HoverIconLi from "./HoverIconLi";
 
-export default function Navbar() {
+export default function Navbar({ gotoHero, gotoProjects }) {
   return (
     <nav className="nav">
       <ul className="nav-ul">
         <HoverIconLi
-          link={"#"}
+          goto={gotoHero}
+          // link={"#"}
           baseImg={koi}
           name={"go back to the beginning!"}
         />
@@ -23,7 +24,8 @@ export default function Navbar() {
         />
 
         <HoverIconLi
-          link={"#projects"}
+          // link={"#projects"}
+          goto={gotoProjects}
           baseImg={laptopCode}
           name={"goto see my projects!"}
         />

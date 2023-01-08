@@ -1,20 +1,43 @@
 // import { useRef, useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
 import japanLights from "/img/japan-lights.jpg";
 import streetJapan from "/img/street.jpg";
 import lamps from "/img/lamps.jpg";
 
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProjectsContainer from "./components/ProjectsContainer";
+import AboutMe from "./components/AboutMe";
+import { ParallaxLayer, Parallax } from "@react-spring/parallax";
+import { useRef } from "react";
 
 export default function App() {
+  const parallaxRef = useRef();
+
+  const gotoHero = () => {
+    parallaxRef.current.scrollTo(0);
+  };
+
+  const gotoProjects = () => {
+    parallaxRef.current.scrollTo(1.4);
+  };
+
   return (
     <>
-      <Navbar />
-      <Hero />
-      <ProjectsContainer />
+      <Navbar {...{ gotoHero }} {...{ gotoProjects }} />
+
+      <Parallax pages={3} ref={parallaxRef}>
+        <ParallaxLayer speed={1.2}>
+          <Hero />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0.9} speed={1.5}>
+          <AboutMe />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1.5} speed={1}>
+          <ProjectsContainer />
+        </ParallaxLayer>
+      </Parallax>
     </>
   );
 }

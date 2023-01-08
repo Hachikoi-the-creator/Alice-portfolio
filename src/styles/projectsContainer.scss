@@ -7,31 +7,8 @@
     position: relative;
   }
 
-  .title {
-    text-align: center;
-    font-weight: 700;
-    padding: 2rem;
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-
-    background-image: linear-gradient(
-      90deg,
-      $gradient-intro1,
-      $gradient-intro2
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -7px;
-      left: 10%;
-      width: 80%;
-      border-bottom: 7px solid $link;
-      border-radius: 7px;
-    }
+  .gradient-subtitle::after {
+    bottom: -7px;
   }
 }
 
