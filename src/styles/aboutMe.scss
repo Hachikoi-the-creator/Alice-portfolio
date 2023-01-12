@@ -10,6 +10,14 @@
     &::after {
       top: 8.5rem;
     }
+
+    @media (max-width: 500px) {
+      padding: 0;
+
+      &::after {
+        top: 6.5rem;
+      }
+    }
   }
 
   .content {
@@ -18,6 +26,16 @@
       border-left: 3px solid $link;
       border-radius: 2px;
       padding-left: 0.2rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .content {
+      padding-top: 2rem;
+
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
 }

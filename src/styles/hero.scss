@@ -89,4 +89,9 @@
     gap: 1rem;
     align-items: center;
   }
+  @media (max-width: 500px) {
+    .buttons {
+      font-size: 1.5rem;
+    }
+  }
 }
