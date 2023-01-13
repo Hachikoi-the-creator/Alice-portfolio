@@ -25,12 +25,11 @@ export default function App() {
     <>
       <Navbar {...{ gotoHero }} {...{ gotoProjects }} />
 
-      <Parallax pages={3} ref={parallaxRef}>
+      <Parallax pages={3.5} ref={parallaxRef}>
         <ParallaxLayer
           speed={1.2}
           style={{
             height: "fit-content",
-            border: "1px solid red",
           }}
         >
           <Hero />
@@ -41,20 +40,12 @@ export default function App() {
           speed={1.5}
           style={{
             height: "fit-content",
-            border: "1px solid yellow",
           }}
         >
           <AboutMe />
         </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={2}
-          speed={1}
-          style={{
-            height: "fit-content",
-            border: "1px solid pink",
-          }}
-        >
+        <ParallaxLayer offset={2} speed={1}>
           <ProjectsContainer />
         </ParallaxLayer>
       </Parallax>
