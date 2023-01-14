@@ -1,7 +1,7 @@
 import "../styles/navbar.scss";
-import koi from "/love.svg";
-import laptopCode from "/laptop-code.svg";
-import emailSvg from "/email.svg";
+import koi from "/white-koi-kanji.svg";
+import laptopCode from "/white-laptop-code.svg";
+import emailSvg from "/white-email.svg";
 import HoverIconLi from "./HoverIconLi";
 
 export default function Navbar({ gotoHero, gotoProjects }) {
@@ -10,7 +10,6 @@ export default function Navbar({ gotoHero, gotoProjects }) {
       <ul className="nav-ul">
         <HoverIconLi
           goto={gotoHero}
-          // link={"#"}
           baseImg={koi}
           name={"go back to the beginning!"}
         />
@@ -24,7 +23,6 @@ export default function Navbar({ gotoHero, gotoProjects }) {
         />
 
         <HoverIconLi
-          // link={"#projects"}
           goto={gotoProjects}
           baseImg={laptopCode}
           name={"goto see my projects!"}

@@ -17,4 +17,13 @@ export default [
     techStack: ["React", "Redux", "React Router", "Styled Components"],
     rowReverse: false
   },
+  {
+    imgUrl: "/img/working-on.webp",
+    title: "DIRTY DEEDS DONE DIRT CHEAP",
+    desc: "just some jojo reference to part 6,just some jojo reference to part 6,just some jojo reference to part 6,just some jojo reference to part 6,just some jojo reference to part 6",
+    liveLink: "#",
+    codeLink: "#",
+    techStack: ["React", "Redux", "React Router", "Styled Components"],
+    rowReverse: true
+  },
 ];

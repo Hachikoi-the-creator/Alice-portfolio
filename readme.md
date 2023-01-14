@@ -5,4 +5,4 @@
 
 # TODO:
 - Change query in `project.scss` to 900px
-- research some ideas for the about me section && add it 
+- Change the svgs in navbar to white
