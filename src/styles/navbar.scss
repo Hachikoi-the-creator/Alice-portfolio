@@ -37,6 +37,9 @@
 // < 600px
 @media (max-width: 600px) {
   .nav {
+    .icon-img {
+      width: 3rem;
+    }
     .nav-ul {
       position: relative;
       flex-direction: row;
