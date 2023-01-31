@@ -37,10 +37,13 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
-        <a className="gradient-btn" href="#">
+        <a
+          className="gradient-btn"
+          href="https://www.linkedin.com/in/adan-moreno7/"
+        >
           LinkedIn
         </a>
-        <a className="gradient-btn" href="#">
+        <a className="gradient-btn" href="https://twitter.com/8koi2">
           Twitter
         </a>
       </motion.div>
