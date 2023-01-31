@@ -17,13 +17,13 @@ export default [
     techStack: ["React", "Redux", "React Router", "Styled Components"],
     rowReverse: false
   },
-  // {
-  //   imgUrl: "/img/working-on.webp",
-  //   title: "DIRTY DEEDS DONE DIRT CHEAP",
-  //   desc: "just some jojo reference to part 6,just some jojo reference to part 6,just some jojo reference to part 6,just some jojo reference to part 6,just some jojo reference to part 6",
-  //   liveLink: "#",
-  //   codeLink: "#",
-  //   techStack: ["React", "Redux", "React Router", "Styled Components"],
-  //   rowReverse: true
-  // },
+   {
+     imgUrl: "/img/food-full.webp",
+     title: "Food Recipes App",
+     desc:"Easily find the steps and ingredients list of the recipe you want to make, you could also add your own recipe if you find it's not there already :D",
+     liveLink: "https://food-project-chi.vercel.app",
+     codeLink: "https://github.com/Hachikoi-the-creator/food-project",
+     techStack: ["React", "Redux", "React Router", "Styled Components","PostgrSQL","Sequelize"],
+     rowReverse: true
+   },
 ];
