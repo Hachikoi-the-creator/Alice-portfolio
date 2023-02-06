@@ -3,16 +3,32 @@ import koi from "/white-koi-kanji.svg";
 import laptopCode from "/white-laptop-code.svg";
 import emailSvg from "/white-email.svg";
 import HoverIconLi from "./HoverIconLi";
+import upImage from "/up-arrow.png"
 
 export default function Navbar({ gotoHero, gotoProjects }) {
+  const heroEnter = (e) => {
+    e.currentTarget.src = koi
+  }
+
+  const heroLeave = (e) => {
+    e.currentTarget.src = upImage
+  }
+
   return (
     <nav className="nav">
       <ul className="nav-ul">
-        <HoverIconLi
-          goto={gotoHero}
-          baseImg={koi}
-          name={"go back to the beginning!"}
-        />
+
+        <li className="icon" onClick={gotoHero}>
+          <span className="icon-link">
+            <img 
+              src={koi} 
+              alt={"goto hero"} 
+              className="icon-img" 
+              onMouseEnter={heroEnter} 
+              onMouseLeave={heroLeave} 
+            />
+          </span>
+        </li>
 
         <HoverIconLi
           link={

@@ -8,8 +8,8 @@ export default function Project(props) {
   const { imgUrl, title, desc, liveLink, codeLink, techStack, rowReverse } =
     props;
 
-  const [liveLinkHover, setLiveLinkHover] = useState(false);
-  const [codeLinkHover, setCodeLinkHover] = useState(false);
+  const [liveLinkHover, setLiveLinkHover] = useState(true);
+  const [codeLinkHover, setCodeLinkHover] = useState(true);
 
   const handleLiveHover = () => {
     setLiveLinkHover((prev) => !prev);

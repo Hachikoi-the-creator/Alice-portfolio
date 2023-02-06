@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function HoverIconLi({ link, baseImg, name, goto }) {
+export default function HoverIconLi({ link, startImg, baseImg, name, goto }) {
   return (
     <>
       {goto ? (
